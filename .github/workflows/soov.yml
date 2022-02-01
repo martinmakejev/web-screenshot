@@ -28,5 +28,6 @@ jobs:
         with:
           source: https://www.soov.ee
           destination: soov.png
+          full-page: true
 
       -  run: ls -lah
