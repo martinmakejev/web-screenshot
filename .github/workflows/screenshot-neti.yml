@@ -26,7 +26,7 @@ jobs:
       - name: Screenshot Website
         uses: swinton/screenshot-website@v1.x
         with:
-          source: https://www.postimees.ee
-          destination: postimees.png
+          source: https://www.neti.ee
+          destination: neti.png
 
       -  run: ls -lah
