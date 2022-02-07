@@ -1,16 +1,20 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Screenshot 
+name: Screenshot Neti
 
-# Controls when the workflow will run
 on:
-  #schedule:
-    # * is a special character in YAML so you have to quote this string
-   # - cron:  '5 * * * *'
 
-  # Allows you to run this workflow manually from the Actions tab
+ push:
+    branches: [ main ]
+    paths:
+      - 'screenshot-neti.yml'
+      
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'screenshot-neti.yml'
+  
   workflow_dispatch:
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
