@@ -9,12 +9,12 @@ on:
     paths:
       - 'screenshot-neti.yml'
       
-  pull_request:
+ pull_request:
     branches: [ main ]
     paths:
       - 'screenshot-neti.yml'
   
-  workflow_dispatch:
+ workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -33,4 +33,5 @@ jobs:
           source: https://www.neti.ee
           destination: neti.png
 
-      -  run: ls -lah
+      - name: List files
+        run: ls -lah && tree
