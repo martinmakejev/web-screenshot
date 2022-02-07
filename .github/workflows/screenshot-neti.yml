@@ -29,4 +29,5 @@ jobs:
           source: https://www.neti.ee
           destination: neti.png
 
-      -  run: ls -lah
+      - name: List files
+        run: ls -lah && tree
